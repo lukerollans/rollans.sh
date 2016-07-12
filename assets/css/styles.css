@@ -1,0 +1,61 @@
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.wrapper {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .wrapper > aside {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 23.2317613015%; }
+    .wrapper > aside:last-child {
+      margin-right: 0; }
+    .wrapper > aside p.email {
+      padding: 22px 0; }
+    .wrapper > aside ul.contact-options {
+      list-style: none; }
+      .wrapper > aside ul.contact-options li {
+        background-position: center left;
+        background-size: 18px;
+        background-repeat: no-repeat; }
+        .wrapper > aside ul.contact-options li a {
+          font-size: 16px;
+          color: #222; }
+        .wrapper > aside ul.contact-options li.github {
+          background-image: url("assets/images/github.svg"); }
+        .wrapper > aside ul.contact-options li.twitter {
+          background-image: url("assets/images/twitter.svg"); }
+  .wrapper > main {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%;
+    margin-left: 8.5298042998%; }
+    .wrapper > main:last-child {
+      margin-right: 0; }
+
+/*# sourceMappingURL=styles.css.map */

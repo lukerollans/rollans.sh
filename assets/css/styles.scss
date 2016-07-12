@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+// Install and configure Bourbon / Neat
+@import "bourbon";
+@import "neat";
+
+$gutter: em(10);
+$grid-columns: 12;
+$max-width: em(1200);
+
+$mobile:        new-breakpoint(max-width 640px  $grid-columns);
+$tablet:        new-breakpoint(max-width 1020px $grid-columns);
+$desktop:       new-breakpoint(min-width 1021px $grid-columns);
+
+// Site styles
+.wrapper {
+  @include outer-container;
+
+  > aside {
+    @include span-columns(3);
+
+    p.email {
+      padding: 22px 0;
+    }
+
+    ul.contact-options {
+      list-style: none;
+
+      li {
+        background-position: center left;
+        background-size: 18px;
+        background-repeat: no-repeat;
+
+        a {
+          font-size: 16px;
+          color: #222;
+        }
+
+        &.github {
+          background-image: url('assets/images/github.svg');
+        }
+
+        &.twitter {
+          background-image: url('assets/images/twitter.svg');
+        }
+      }
+    }
+  }
+
+  > main {
+    @include span-columns(8);
+    @include shift(1);
+  }
+}

@@ -5,8 +5,10 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
-          sourceMap: true
+          sourceMap: true,
+          includePaths: require("node-neat").includePaths
         },
+
         files: {
           'assets/css/styles.css' : 'assets/css/styles.scss'
         }
