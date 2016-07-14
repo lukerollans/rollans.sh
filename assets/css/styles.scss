@@ -38,6 +38,14 @@ $desktop: new-breakpoint(min-width 1021px $grid-columns);
   > aside {
     @include span-columns(3);
 
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+
+    img {
+      max-width: 100%;
+    }
+
     p.email {
       padding: 22px 0;
 
@@ -78,6 +86,12 @@ $desktop: new-breakpoint(min-width 1021px $grid-columns);
     @include span-columns(8);
     max-width: 590px;
 
+    @include media($mobile) {
+      @include span-columns(12);
+      padding-top: 50px;
+      max-width: none;
+    }
+
     header {
       max-width: 560px;
 
@@ -114,14 +128,20 @@ $desktop: new-breakpoint(min-width 1021px $grid-columns);
       }
 
       ul.skill-set {
-        @include row;
+        @include display(flex);
+        @include align-items(center);
+        @include justify-content(space-between);
+        @include flex-wrap(wrap);
         list-style: none;
 
         li {
+          min-width: 100px;
+          min-height: 165px;
+          margin-bottom: 25px;
           float: left;
 
-          &:not(:last-child) {
-            margin-right: 50px;
+          @include media($tablet) {
+            width: 113px;
           }
 
           img {
@@ -166,8 +186,14 @@ $desktop: new-breakpoint(min-width 1021px $grid-columns);
         img {
           display: block;
           width: 360px;
-          height: 206;
+          height: 206px;
+          position: relative;
+          top: -25px;
           float: right;
+
+          @include media($mobile) {
+            display: none;
+          }
         }
 
         p.description {
@@ -176,6 +202,11 @@ $desktop: new-breakpoint(min-width 1021px $grid-columns);
           line-height: 23px;
           max-width: 190px;
           float: left;
+
+          @include media($mobile) {
+            float: none;
+            max-width: none;
+          }
         }
       }
 
