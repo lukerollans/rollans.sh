@@ -24,7 +24,8 @@ html {
 .wrapper {
   max-width: 75em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 50px 40px; }
   .wrapper::after {
     clear: both;
     content: "";
@@ -38,26 +39,110 @@ html {
       margin-right: 0; }
     .wrapper > aside p.email {
       padding: 22px 0; }
+      .wrapper > aside p.email a {
+        color: #222;
+        text-decoration: none; }
     .wrapper > aside ul.contact-options {
       list-style: none; }
       .wrapper > aside ul.contact-options li {
+        padding: 3px 0 3px 28px;
         background-position: center left;
         background-size: 18px;
         background-repeat: no-repeat; }
         .wrapper > aside ul.contact-options li a {
           font-size: 16px;
+          text-decoration: none;
           color: #222; }
         .wrapper > aside ul.contact-options li.github {
-          background-image: url("assets/images/github.svg"); }
+          background-image: url("/assets/images/logos/github.svg"); }
         .wrapper > aside ul.contact-options li.twitter {
-          background-image: url("assets/images/twitter.svg"); }
+          background-position: 0 7px;
+          background-image: url("/assets/images/logos/twitter.svg"); }
   .wrapper > main {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
     width: 65.8807828007%;
-    margin-left: 8.5298042998%; }
+    max-width: 590px; }
     .wrapper > main:last-child {
       margin-right: 0; }
+    .wrapper > main header {
+      max-width: 560px; }
+      .wrapper > main header h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 25px; }
+      .wrapper > main header h2 {
+        font-size: 20px;
+        font-weight: 400; }
+    .wrapper > main p.hire a {
+      font-size: 18px;
+      font-weight: 600;
+      color: #00BCE4;
+      text-decoration: none; }
+    .wrapper > main article h3 {
+      font-size: 26px;
+      font-style: italic;
+      font-weight: 400;
+      border-bottom: solid 2px #222;
+      padding-bottom: 10px;
+      padding-top: 40px;
+      margin-bottom: 40px; }
+    .wrapper > main article ul.skill-set {
+      display: block;
+      list-style: none; }
+      .wrapper > main article ul.skill-set::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .wrapper > main article ul.skill-set li {
+        float: left; }
+        .wrapper > main article ul.skill-set li:not(:last-child) {
+          margin-right: 50px; }
+        .wrapper > main article ul.skill-set li img {
+          display: block;
+          margin: 0 auto 15px; }
+        .wrapper > main article ul.skill-set li span {
+          font-size: 20px;
+          font-weight: 500;
+          text-align: center;
+          display: block; }
+          .wrapper > main article ul.skill-set li span span {
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 400; }
+    .wrapper > main article .work-example {
+      display: block; }
+      .wrapper > main article .work-example::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .wrapper > main article .work-example h4 {
+        font-size: 24px;
+        font-weight: 700; }
+      .wrapper > main article .work-example p.link {
+        margin-bottom: 25px; }
+        .wrapper > main article .work-example p.link a {
+          font-size: 16px;
+          font-weight: 700;
+          text-decoration: none;
+          color: #00BCE4; }
+      .wrapper > main article .work-example img {
+        display: block;
+        width: 360px;
+        height: 206;
+        float: right; }
+      .wrapper > main article .work-example p.description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+        max-width: 190px;
+        float: left; }
+    .wrapper > main article ul.work-history {
+      margin-left: 25px; }
+      .wrapper > main article ul.work-history li {
+        font-size: 20px; }
+        .wrapper > main article ul.work-history li:not(:last-child) {
+          margin-bottom: 15px; }
 
 /*# sourceMappingURL=styles.css.map */

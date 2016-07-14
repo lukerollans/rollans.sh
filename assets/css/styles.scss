@@ -33,33 +33,42 @@ $desktop: new-breakpoint(min-width 1021px $grid-columns);
 // Site styles
 .wrapper {
   @include outer-container;
+  padding: 50px 40px;
 
   > aside {
     @include span-columns(3);
 
     p.email {
       padding: 22px 0;
+
+      a {
+        color: #222;
+        text-decoration: none;
+      }
     }
 
     ul.contact-options {
       list-style: none;
 
       li {
+        padding: 3px 0 3px 28px;
         background-position: center left;
         background-size: 18px;
         background-repeat: no-repeat;
 
         a {
           font-size: 16px;
+          text-decoration: none;
           color: #222;
         }
 
         &.github {
-          background-image: url('assets/images/github.svg');
+          background-image: url('/assets/images/logos/github.svg');
         }
 
         &.twitter {
-          background-image: url('assets/images/twitter.svg');
+          background-position: 0 7px;
+          background-image: url('/assets/images/logos/twitter.svg');
         }
       }
     }
@@ -67,6 +76,120 @@ $desktop: new-breakpoint(min-width 1021px $grid-columns);
 
   > main {
     @include span-columns(8);
-    @include shift(1);
+    max-width: 590px;
+
+    header {
+      max-width: 560px;
+
+      h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 25px;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+
+    p.hire {
+      a {
+        font-size: 18px;
+        font-weight: 600;
+        color: #00BCE4;
+        text-decoration: none;
+      }
+    }
+
+    article {
+      h3 {
+        font-size: 26px;
+        font-style: italic;
+        font-weight: 400;
+        border-bottom: solid 2px #222;
+        padding-bottom: 10px;
+        padding-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      ul.skill-set {
+        @include row;
+        list-style: none;
+
+        li {
+          float: left;
+
+          &:not(:last-child) {
+            margin-right: 50px;
+          }
+
+          img {
+            display: block;
+            margin: 0 auto 15px;
+          }
+
+          span {
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            display: block;
+
+            span {
+              font-size: 14px;
+              font-style: italic;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+
+      .work-example {
+        @include row;
+
+        h4 {
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        p.link {
+          margin-bottom: 25px;
+
+          a {
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #00BCE4;
+          }
+        }
+
+        img {
+          display: block;
+          width: 360px;
+          height: 206;
+          float: right;
+        }
+
+        p.description {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 23px;
+          max-width: 190px;
+          float: left;
+        }
+      }
+
+      ul.work-history {
+        margin-left: 25px;
+
+        li {
+          font-size: 20px;
+
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
   }
 }
