@@ -99,3 +99,15 @@ a {
     .meat-and-potatoes ul li {
       padding-left: 10px;
       padding-bottom: 2px; }
+
+.open-source-example {
+  max-width: 320px;
+  float: left;
+  padding-left: 100px; }
+  .open-source-example h2 {
+    margin-bottom: 10px; }
+  .open-source-example ul {
+    margin-top: 9px;
+    list-style: none; }
+    .open-source-example ul li {
+      margin-bottom: 1px; }
