@@ -1,24 +1,61 @@
-.App {
-  text-align: center;
-}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  font-family: "Zilla Slab", serif;
+  color: #222;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  background: none; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+img {
+  max-width: 100%; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px; }
+  .wrap::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media (max-width: 640px) {
+    .wrap {
+      padding: 0 20px; } }
 
-.App-intro {
-  font-size: large;
-}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #222; }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+h1 {
+  font-size: 20px; }
+
+h2 {
+  font-weight: 18px; }
+
+h3 {
+  font-size: 16px; }
+
+h4 {
+  font-size: 14px; }
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  padding: 9px 0;
+  color: #222; }
+
+a {
+  color: #E04646;
+  text-decoration: underline; }
+
+.site-wrapper {
+  padding: 40px; }
