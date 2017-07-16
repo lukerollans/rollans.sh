@@ -35,10 +35,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #222; }
 
 h1 {
-  font-size: 20px; }
+  font-size: 20px;
+  line-height: 24px; }
 
 h2 {
-  font-weight: 18px; }
+  font-size: 18px; }
 
 h3 {
   font-size: 16px; }
@@ -59,3 +60,42 @@ a {
 
 .site-wrapper {
   padding: 40px; }
+
+.sidebar {
+  width: 285px;
+  float: left; }
+  .sidebar a {
+    font-size: 18px;
+    color: #222;
+    display: inline-block;
+    text-decoration: none; }
+    .sidebar a.email {
+      margin: 30px 0; }
+  .sidebar img {
+    display: block; }
+  .sidebar ul.social {
+    list-style: none; }
+    .sidebar ul.social li {
+      margin-bottom: 3px; }
+      .sidebar ul.social li.github a {
+        background-image: url("assets/images/github.svg"); }
+      .sidebar ul.social li.twitter a {
+        background-image: url("assets/images/twitter.svg"); }
+      .sidebar ul.social li a {
+        padding-left: 30px;
+        background: transparent center left no-repeat;
+        background-size: 17px; }
+
+.meat-and-potatoes {
+  width: 380px;
+  float: left; }
+  .meat-and-potatoes h1 {
+    margin-bottom: 10px; }
+  .meat-and-potatoes h2 {
+    margin-top: 30px;
+    margin-bottom: 15px; }
+  .meat-and-potatoes ul {
+    margin-left: 30px; }
+    .meat-and-potatoes ul li {
+      padding-left: 10px;
+      padding-bottom: 2px; }
