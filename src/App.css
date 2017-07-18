@@ -90,9 +90,6 @@ a {
   animation-delay: 0.8s;
   opacity: 0;
   width: 285px; }
-  @media (max-width: 640px) {
-    .sidebar {
-      padding-bottom: 50px; } }
   .sidebar a {
     font-size: 18px;
     color: #222;
