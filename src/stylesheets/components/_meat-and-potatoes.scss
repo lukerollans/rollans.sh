@@ -1,6 +1,13 @@
 .meat-and-potatoes {
   width: 380px;
-  float: left;
+
+  @include grid-media($tablet-grid) {
+    padding-left: 25px;
+  }
+
+  @include grid-media($mobile-grid) {
+    padding-left: 0;
+  }
 
   h1 {
     margin-bottom: 10px;

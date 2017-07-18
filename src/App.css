@@ -59,11 +59,17 @@ a {
   text-decoration: underline; }
 
 .site-wrapper {
+  display: flex;
   padding: 40px; }
+  @media (max-width: 640px) {
+    .site-wrapper {
+      flex-direction: column; } }
 
 .sidebar {
-  width: 285px;
-  float: left; }
+  width: 285px; }
+  @media (max-width: 640px) {
+    .sidebar {
+      padding-bottom: 50px; } }
   .sidebar a {
     font-size: 18px;
     color: #222;
@@ -87,8 +93,13 @@ a {
         background-size: 17px; }
 
 .meat-and-potatoes {
-  width: 380px;
-  float: left; }
+  width: 380px; }
+  @media (max-width: 1020px) {
+    .meat-and-potatoes {
+      padding-left: 25px; } }
+  @media (max-width: 640px) {
+    .meat-and-potatoes {
+      padding-left: 0; } }
   .meat-and-potatoes h1 {
     margin-bottom: 10px; }
   .meat-and-potatoes h2 {
@@ -102,8 +113,13 @@ a {
 
 .open-source-example {
   max-width: 320px;
-  float: left;
   padding-left: 100px; }
+  @media (max-width: 1020px) {
+    .open-source-example {
+      padding-left: 25px; } }
+  @media (max-width: 640px) {
+    .open-source-example {
+      padding: 50px 0; } }
   .open-source-example h2 {
     margin-bottom: 10px; }
   .open-source-example ul {

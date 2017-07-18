@@ -1,7 +1,14 @@
 .open-source-example {
   max-width: 320px;
-  float: left;
   padding-left: 100px;
+
+  @include grid-media($tablet-grid) {
+    padding-left: 25px;
+  }
+
+  @include grid-media($mobile-grid) {
+    padding: 50px 0;
+  }
 
   h2 {
     margin-bottom: 10px;

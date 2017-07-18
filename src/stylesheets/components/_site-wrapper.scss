@@ -1,3 +1,8 @@
 .site-wrapper {
+  display: flex;
   padding: 40px;
+
+  @include grid-media($mobile-grid) {
+    flex-direction: column;
+  }
 }
