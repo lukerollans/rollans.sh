@@ -1,3 +1,19 @@
+@keyframes drip {
+  from {
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+    transform: translateY(-15px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -66,6 +82,13 @@ a {
       flex-direction: column; } }
 
 .sidebar {
+  -webkit-animation: drip 1s ease forwards;
+  -moz-animation: drip 1s ease forwards;
+  animation: drip 1s ease forwards;
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  opacity: 0;
   width: 285px; }
   @media (max-width: 640px) {
     .sidebar {
@@ -93,12 +116,20 @@ a {
         background-size: 17px; }
 
 .meat-and-potatoes {
+  -webkit-animation: drip 1s ease forwards;
+  -moz-animation: drip 1s ease forwards;
+  animation: drip 1s ease forwards;
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+  opacity: 0;
   width: 380px; }
   @media (max-width: 1020px) {
     .meat-and-potatoes {
       padding-left: 25px; } }
   @media (max-width: 640px) {
     .meat-and-potatoes {
+      padding-top: 50px;
       padding-left: 0; } }
   .meat-and-potatoes h1 {
     margin-bottom: 10px; }
@@ -112,6 +143,13 @@ a {
       padding-bottom: 2px; }
 
 .open-source-example {
+  -webkit-animation: drip 1s ease forwards;
+  -moz-animation: drip 1s ease forwards;
+  animation: drip 1s ease forwards;
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+  opacity: 0;
   max-width: 320px;
   padding-left: 100px; }
   @media (max-width: 1020px) {

@@ -1,4 +1,7 @@
 .meat-and-potatoes {
+  @include animation(drip 1s ease forwards);
+  @include animation-delay(1.4s);
+  opacity: 0;
   width: 380px;
 
   @include grid-media($tablet-grid) {
@@ -6,6 +9,7 @@
   }
 
   @include grid-media($mobile-grid) {
+    padding-top: 50px;
     padding-left: 0;
   }
 
