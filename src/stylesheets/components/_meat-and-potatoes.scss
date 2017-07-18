@@ -5,10 +5,12 @@
   width: 380px;
 
   @include grid-media($tablet-grid) {
+    max-width: 400px;
     padding-left: 25px;
   }
 
   @include grid-media($mobile-grid) {
+    max-width: 100%;
     padding-top: 50px;
     padding-left: 0;
   }

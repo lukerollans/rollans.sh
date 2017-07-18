@@ -6,6 +6,7 @@
   padding-left: 100px;
 
   @include grid-media($tablet-grid) {
+    width: auto;
     padding-left: 25px;
   }
 

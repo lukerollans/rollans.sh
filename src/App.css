@@ -123,9 +123,11 @@ a {
   width: 380px; }
   @media (max-width: 1020px) {
     .meat-and-potatoes {
+      max-width: 400px;
       padding-left: 25px; } }
   @media (max-width: 640px) {
     .meat-and-potatoes {
+      max-width: 100%;
       padding-top: 50px;
       padding-left: 0; } }
   .meat-and-potatoes h1 {
@@ -151,6 +153,7 @@ a {
   padding-left: 100px; }
   @media (max-width: 1020px) {
     .open-source-example {
+      width: auto;
       padding-left: 25px; } }
   @media (max-width: 640px) {
     .open-source-example {
