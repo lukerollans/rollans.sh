@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-  <g fill="none" fill-rule="evenodd">
-    <circle cx="60" cy="60" r="60" fill="#222222"/>
-    <text fill="#FFFFFF" font-family="Merriweather-LightIt, Merriweather" font-size="24" font-style="italic" font-weight="300">
-      <tspan x="37.02" y="69">luke</tspan>
-    </text>
-  </g>
-</svg>
