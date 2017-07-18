@@ -2,6 +2,7 @@
   "name": "lukerollans.me",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lukerollans.me",
   "dependencies": {
     "bourbon": "^4.3.4",
     "bourbon-neat": "^2.0.0",
@@ -9,9 +10,12 @@
     "npm-run-all": "^4.0.2",
     "react": "^15.0.0-rc.2",
     "react-dom": "^15.0.0-rc.2",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "gh-pages": "^1.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build-css": "node-sass-chokidar src/ -o src --include-path ./node_modules/bourbon/app/assets/stylesheets --include-path ./node_modules/bourbon-neat/core",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive --include-path ./node_modules/bourbon/app/assets/stylesheets --include-path ./node_modules/bourbon-neat/core",
     "start-js": "react-scripts start",
