@@ -17,8 +17,8 @@ const OpenSourceExample = (props) => {
       </p>
 
       <p>
-        The app is approximately 85% complete, with source code available 
-        on GitHub
+        It is not yet complete or deployed, but feel free to check out 
+        the source thus far on Github!
       </p>
 
       <ul>
