@@ -29,8 +29,8 @@ const MeatAndPotatoes = (props) => {
       <h2>Recent work history.</h2>
       <ul>
         <li>
-          Shippit, 2017 - current,<br />
-          Ruby, React
+          Alembic, 2017 - current,<br />
+          Elixir, GraphQL, React
         </li>
 
         <li>
