@@ -1,0 +1,43 @@
+.sidebar {
+  @include animation(drip 1s ease forwards);
+  @include animation-delay(0.8s);
+  opacity: 0;
+  width: 285px;
+
+  a {
+    font-size: 18px;
+    color: $black;
+    display: inline-block;
+    text-decoration: none;
+
+    &.email {
+      margin: 30px 0;
+    }
+  }
+
+  img {
+    display: block;
+  }
+
+  ul.social {
+    list-style: none;
+
+    li {
+      margin-bottom: 3px;
+
+      &.github a {
+        background-image: url('assets/images/github.svg');
+      }
+
+      &.twitter a {
+        background-image: url('assets/images/twitter.svg');
+      }
+
+      a {
+        padding-left: 30px;
+        background: transparent center left no-repeat;
+        background-size: 17px;
+      }
+    }
+  }
+}
