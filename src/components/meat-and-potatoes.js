@@ -1,19 +1,21 @@
-import React from 'react'
+import React from 'react';
 
-const MeatAndPotatoes = (props) => {
+const MeatAndPotatoes = props => {
   return (
     <div className="meat-and-potatoes">
       <h1>
-        Full stack web app developer with a passion for product and user experience.
+        Full stack web app developer with a passion for product and user
+        experience.
         <br />Based in Perth, Australia
       </h1>
 
       <p>
-        I seek to improve the lives of real people through cool, well tested and simplistic software that does more with less.
+        I seek to improve the lives of real people through cool, well tested and
+        simplistic software that does more with less.
       </p>
 
       <p>
-        Got an Elixir job? <a href="mailto:hello@lukerollans.me">Hire me</a>.
+        Got an Elixir job? <a href="mailto:luke@rollans.sh">Hire me</a>.
       </p>
 
       <h2>The tech.</h2>
@@ -49,7 +51,7 @@ const MeatAndPotatoes = (props) => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default MeatAndPotatoes
+export default MeatAndPotatoes;
