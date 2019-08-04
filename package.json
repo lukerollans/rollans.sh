@@ -1,8 +1,8 @@
 {
-  "name": "lukerollans.me",
+  "name": "rollans.sh",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lukerollans.me",
+  "homepage": "https://rollans.sh",
   "dependencies": {
     "bourbon": "^4.3.4",
     "bourbon-neat": "^2.0.0",
