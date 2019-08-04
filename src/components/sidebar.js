@@ -1,13 +1,13 @@
-import React from 'react'
-import lukeLogo from '../assets/images/logo.svg'
+import React from 'react';
+import lukeLogo from '../assets/images/logo.svg';
 
-const Sidebar = (props) => {
+const Sidebar = props => {
   return (
     <div className="sidebar">
       <img src={lukeLogo} alt="Luke Rollans" width="120" height="120" />
 
-      <a className="email" href="mailto:hello@lukerollans.me">
-        hello@lukerollans.me
+      <a className="email" href="mailto:luke@rollans.sh">
+        luke@rollans.sh
       </a>
 
       <ul className="social">
@@ -20,7 +20,7 @@ const Sidebar = (props) => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
