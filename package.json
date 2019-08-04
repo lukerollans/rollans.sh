@@ -6,12 +6,12 @@
   "dependencies": {
     "bourbon": "^4.3.4",
     "bourbon-neat": "^2.0.0",
+    "gh-pages": "^1.0.0",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.0.2",
     "react": "^15.0.0-rc.2",
     "react-dom": "^15.0.0-rc.2",
-    "react-scripts": "1.0.10",
-    "gh-pages": "^1.0.0"
+    "react-scripts": "1.0.10"
   },
   "scripts": {
     "predeploy": "npm run build",
